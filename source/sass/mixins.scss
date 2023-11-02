@@ -1,7 +1,6 @@
 @mixin retina {
-
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     @content;
   }
 }
@@ -21,7 +20,7 @@
 }
 
 @mixin active {
-  &.focus-visible:active {
+  &:active:not(.focus-visible) {
     @content;
   }
 }
@@ -40,27 +39,8 @@
 
 // Desktop first
 
-@mixin vp-1919 {
-  @media (max-width: ($vp-1920 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1439 {
-  @media (max-width: ($vp-1440 - 1px)) {
-    @content;
-  }
-}
-
-//дополнительный миксин точка перестроения
 @mixin vp-1365 {
-  @media (max-width: ($vp-1440 -1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1279 {
-  @media (max-width: ($vp-1280 - 1px)) {
+  @media (max-width: ($vp-1366 - 1px)) {
     @content;
   }
 }
