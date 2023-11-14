@@ -1,0 +1,135 @@
+.promo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: span 2;
+}
+
+.promo__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 46px 39px 45px;
+  background-color: $color-torch-red-first;
+  color: $color-default-white;
+
+  @include vp-1365 {
+    padding-top: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 46px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  & h3 {
+    margin: 0 0 15px 0;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+
+    @include vp-1365 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      margin-bottom: 9px;
+    }
+  }
+
+  & span {
+    margin-bottom: 25px;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+
+    @include vp-1365 {
+      margin-bottom: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 64px;
+      margin-bottom: 19px;
+    }
+  }
+
+  & p {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 300;
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 26px;
+    }
+  }
+
+  & a {
+    --color: #ffffff;
+    display: block;
+    //width: fit-content;
+    width: max-content;
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.7px;
+    color: var(--color);
+    padding: 9px;
+    margin-left: -9px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+
+    @include vp-1365 {
+      grid-column: span 2;
+      grid-row: span 1;
+      grid-template-columns: 1fr auto;
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% - 18px);
+      height: 1px;
+      left: 9px;
+      right: 9px;
+      bottom: 4px;
+      background-color: var(--color);
+    }
+
+    @include hover-focus {
+      @media (hover: hover) {
+        opacity: 0.8;
+      }
+
+      &.focus-visible:focus {
+        border: 1px solid var(--color);
+        outline: none;
+
+        &::after {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
+
+.promo__image {
+  background-color: $color-dark-cerulean-50;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -23,11 +23,20 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/link";
 @import "blocks/header";
 @import "blocks/header-navigation";
 @import "blocks/hero";
-
-
+@import "blocks/about";
+@import "blocks/price";
+@import "blocks/rate-card";
+@import "blocks/games";
+@import "blocks/jury";
+@import "blocks/jury-card";
+@import "blocks/features";
+@import "blocks/offers";
+@import "blocks/promo";
+@import "blocks/sitemap";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

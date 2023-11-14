@@ -1,0 +1,226 @@
+.rate-card {
+  padding: 67px 77px 65px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 360px;
+  background-color: $color-default-white;
+
+  @include vp-1365 {
+    max-width: none;
+    width: 100%;
+    padding: 67px 77px 65px;
+  }
+
+  @include vp-767 {
+    padding: 52px 42px 50px;
+  }
+
+  &--full {
+    @include vp-1365 {
+      padding: 65px 77px 65px;
+    }
+
+    @include vp-767 {
+      padding: 52px 42px 50px;
+    }
+  }
+
+  &--day {
+    border: 7px solid;
+    border-image-slice: 1;
+    border-image-source: $gradient-border;
+    padding: 60px 70px 58px;
+
+    @include vp-767 {
+      padding: 45px 35px 43px;
+    }
+  }
+}
+
+.rate-card__title {
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: $color-sapphire;
+  margin-bottom: 7px;
+  z-index: 1;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 13px;
+  }
+
+  &--full {
+    @include vp-1365 {
+      margin-bottom: 18px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.rate-card__text {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $color-sapphire;
+  margin-bottom: 69px;
+  letter-spacing: 0;
+
+  @include vp-1365 {
+    margin-bottom: 75px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 65px;
+  }
+
+  &--full {
+    @include vp-1365 {
+      margin-bottom: 73px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 63px;
+    }
+  }
+}
+
+.rate-card__wrapper {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-bottom: 34px;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+
+  @include vp-1365 {
+    margin-bottom: 23px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 22px;
+  }
+
+  &--full {
+    @include vp-1365 {
+      margin-bottom: 23px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.rate-card__wrapper svg {
+  margin-bottom: 2px;
+  z-index: 2;
+
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+    margin-bottom: 0;
+  }
+}
+
+.rate-card__price {
+  margin: 0;
+  padding: 0;
+  color: $color-egyptian-blue;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  padding-right: 14px;
+  background-size: 24px 33px;
+  background-position: 100% 48%;
+  position: relative;
+  z-index: 2;
+  max-width: 180px;
+  word-break: break-all;
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
+    padding-right: 10px;
+  }
+}
+
+.rate-card__shadow {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150px;
+  color: #e8e8e8;
+  opacity: 0.48;
+  left: 50%;
+  transform: translateX(-51%);
+  top: -56px;
+  max-height: 130%;
+  max-width: 360px;
+  overflow: hidden;
+  z-index: 1;
+
+  @include vp-1365 {
+    transform: translateX(-50%);
+  }
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 120px;
+    top: -44px;
+  }
+
+  &--full {
+    @include vp-1365 {
+      top: -54px;
+    }
+
+    @include vp-767 {
+      font-size: 80px;
+      line-height: 120px;
+      top: -44px;
+    }
+  }
+}
+
+.rate-card__button {
+  margin-left: 1px;
+  padding: 25px 40px 25px 40px;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  width: 205px;
+  z-index: 2;
+
+  @include vp-1365 {
+    padding: 21px 40px 19px 40px;
+    margin-left: 0;
+  }
+}

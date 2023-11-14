@@ -11,6 +11,7 @@
   cursor: pointer;
   background-color: $color-transparent;
 
+
   @include vp-1365 {
     font-weight: 400;
   }
@@ -19,33 +20,45 @@
     font-weight: 700;
   }
 
-  &--dark-background {
-    border: solid 2px $color-default-white;
-    color: $color-default-white;
+  @include focus {
+    outline: none;
+  }
+}
 
-    @include hover-focus {
-      background-color: $color-default-white;
-      color: $color-egyptian-blue;
-    }
+.btn--dark-background {
+  background-color: $color-transparent;
+  border: solid 2px $color-default-white;
+  color: $color-default-white;
 
-    @include active {
-      color: $color-sapphire;
-    }
+  &:focus {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
   }
 
-  &--light-background {
-    border: solid 2px $color-sapphire;
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
+  }
+
+  @include active {
     color: $color-sapphire;
+    background-color: $color-default-white;
+  }
+}
 
-    @include hover-focus {
-      background-color: $gradient-button;
-      color: $color-default-white;
-    }
+.btn--light-background {
+  color: $color-sapphire;
+  outline: solid 2px $color-sapphire;
 
-    @include active {
-      background-color: $gradient-button;
-      color: opacity($color-default-white) 0.7;
-    }
+  @include hover-focus {
+    outline: none;
+    background: $gradient-price-button;
+    color: $color-default-white;
+  }
+
+  @include active {
+    background: $gradient-price-button;
+    color: $color-default-white-70;
   }
 
   &:disabled {
