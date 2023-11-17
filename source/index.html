@@ -70,12 +70,14 @@
       </div>
     </header>
     <main>
-      <section class="about container" data-test="about">
-        <div class="about__wrapper">
+      <section class="about" data-test="about">
+        <div class="about__wrapper container">
           <div class="about__wrapper-text">
-            <h2>Тренажёрный зал</h2>
-            <h3>Просторный зал площадью 900&nbsp;кв/м</h3>
-            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за Уралом и&nbsp;идеальное место для укрепления тела
+            <h2>Тренажерный зал</h2>
+            <span>Просторный зал площадью 900&nbsp;кв/м</span>
+            <p>Supergym&nbsp;&mdash; самый большой&nbsp;фитнес центр за Уралом и идеальное место для
+              укрепления
+              тела
               и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех
               спортсменов.</p>
             <p>В&nbsp;зале расположены отдельная зона для Crossfit и кардио-зона с&nbsp;40&nbsp;тренажерами. Также
@@ -152,7 +154,7 @@
               </div>
               <a class="rate-card__button btn btn--light-background" href="#">купить абонемент</a>
             </li>
-            <li class="price__rate-item rate-card rate-card--day">
+            <li class="price__rate-item rate-card rate-card--border">
               <h3 class="rate-card__title">Дневной</h3>
               <span class="rate-card__text" data-lessons>с 8:00 до 17:00</span>
               <div class="rate-card__wrapper">
@@ -164,10 +166,10 @@
               </div>
               <a class="rate-card__button btn btn--light-background" href="#">купить абонемент</a>
             </li>
-            <li class="price__rate-item rate-card rate-card--full">
-              <h3 class="rate-card__title rate-card__title--full">Полный день</h4>
-                <span class="rate-card__text rate-card__text--full" data-lessons>с 8:00 до 22:00</span>
-                <div class="rate-card__wrapper rate-card__wrapper--full">
+            <li class="price__rate-item rate-card rate-card--full_day">
+              <h3 class="rate-card__title">Полный день</h4>
+                <span class="rate-card__text" data-lessons>с 8:00 до 22:00</span>
+                <div class="rate-card__wrapper rate-card__wrapper">
                   <span class="rate-card__price" data-price="2700">2700</span>
                   <svg width="30" height="42" role="img">
                     <use href="img/sprite.svg#ruble"></use>
@@ -200,7 +202,7 @@
             <div class="games__content">
               <div class="games__info">
                 <h2 class="games__title">SUPER GAMES</h2>
-                <dl class="games__data-list">
+                <dl class="games__list">
                   <div class="games__date">
                     <dt>Дата</dt>
                     <dd>
@@ -249,8 +251,9 @@
             <div class="jury__swiper swiper">
               <ul class="jury__list swiper-wrapper">
                 <li class="jury__item swiper-slide">
+                  <h3 class="jury__name">Анна Павлова</h3>
                   <div class="jury__card jury-card">
-                    <h3 class="jury-card__name">Анна Павлова</h3>
+                    <h4 class="jury-card__name">Анна Павлова</h4>
                     <p class="jury-card__specialty">Gymnastic</p>
                     <ul class="jury-card__list">
                       <li class="jury-card__item">Certified Level 3 Trainer</li>
@@ -275,8 +278,9 @@
                   </picture>
                 </li>
                 <li class="jury__item swiper-slide">
+                  <h3 class="jury__name">Алексей Лавров</h3>
                   <div class="jury__card jury-card">
-                    <h3 class="jury-card__name">Алексей Лавров</h3>
+                    <h4 class="jury-card__name">Алексей Лавров</h4>
                     <p class="jury-card__specialty">Yoga & Stretching</p>
                     <ul class="jury-card__list">
                       <li class="jury-card__item">Certified Level 4 Traine</li>
@@ -300,8 +304,9 @@
                   </picture>
                 </li>
                 <li class="jury__item swiper-slide">
+                  <h3 class="jury__name">Александр Пашков</h3>
                   <div class="jury__card jury-card">
-                    <h3 class="jury-card__name">Александр Пашков</h3>
+                    <h4 class="jury-card__name">Александр Пашков</h4>
                     <p class="jury-card__specialty">CrossFit</p>
                     <ul class="jury-card__list">
                       <li class="jury-card__item">Certified Level 3 Trainer</li>
@@ -325,8 +330,9 @@
                   </picture>
                 </li>
                 <li class="jury__item swiper-slide">
+                  <h3 class="jury__name">Мария Кетова</h3>
                   <div class="jury__card jury-card">
-                    <h3 class="jury-card__name">Мария Кетова</h3>
+                    <h4 class="jury-card__name">Мария Кетова</h4>
                     <p class="jury-card__specialty">Tai-bo</p>
                     <ul class="jury-card__list">
                       <li class="jury-card__item">Certified Level 3 Traine</li>
@@ -350,8 +356,9 @@
                   </picture>
                 </li>
                 <li class="jury__item swiper-slide">
+                  <h3 class="jury__name">Анна Павлова</h3>
                   <div class="jury__card jury-card">
-                    <h3 class="jury-card__name">Анна Павлова</h3>
+                    <h4 class="jury__name">Анна Павлова</h4>
                     <p class="jury-card__specialty">Gymnastic</p>
                     <ul class="jury-card__list">
                       <li class="jury-card__item">Certified Level 3 Trainer</li>
@@ -376,8 +383,9 @@
                   </picture>
                 </li>
                 <li class="jury__item swiper-slide">
+                  <h3 class="jury__name">Алексей Лавров</h3>
                   <div class="jury__card jury-card">
-                    <h3 class="jury-card__name">Алексей Лавров</h3>
+                    <h4 class="jury__name">Алексей Лавров</h4>
                     <p class="jury-card__specialty">Yoga & Stretching</p>
                     <ul class="jury-card__list">
                       <li class="jury-card__item">Certified Level 4 Traine</li>
@@ -401,8 +409,9 @@
                   </picture>
                 </li>
                 <li class="jury__item swiper-slide">
+                  <h3 class="jury__name">Александр Пашков</h3>
                   <div class="jury__card jury-card">
-                    <h3 class="jury-card__name">Александр Пашков</h3>
+                    <h4 class="jury__name">Александр Пашков</h4>
                     <p class="jury-card__specialty">CrossFit</p>
                     <ul class="jury-card__list">
                       <li class="jury-card__item">Certified Level 3 Trainer</li>
@@ -426,8 +435,9 @@
                   </picture>
                 </li>
                 <li class="jury__item swiper-slide">
+                  <h3 class="jury__name">Мария Кетова</h3>
                   <div class="jury__card jury-card">
-                    <h3 class="jury-card__name">Мария Кетова</h3>
+                    <h4 class="jury__name">Мария Кетова</h4>
                     <p class="jury-card__specialty">Tai-bo</p>
                     <ul class="jury-card__list">
                       <li class="jury-card__item">Certified Level 3 Traine</li>
@@ -470,7 +480,7 @@
               <p>Современные тренажеры на все группы мышц</p>
             </li>
             <li>
-              <div>
+              <div class="features__number-block">
                 <b>900</b>
                 <span>кв/м</span>
               </div>
@@ -513,44 +523,75 @@
         </div>
       </section>
       <section class="offers" data-test="offers">
-        <div class="offers__wrapper container">
-          <h2 class="offers__title">Акции</h2>
-          <div class="offers__list">
-            <article class="offers__promo promo">
-              <div class="promo__text-wrapper">
-                <h3>Год</h3>
-                <span>4999</span>
-                <p>Безлимитный абонемент в тренажерный зал</p>
+        <div class="container">
+          <div class="offers__wrapper">
+            <h2 class="offers__title">Акции</h2>
+            <div class="offers__list">
+              <article class="offers__promo promo">
+                <div class="promo__text-wrapper">
+                  <h3>Год</h3>
+                  <span>4999</span>
+                  <p>Безлимитный абонемент в тренажерный зал</p>
+                  <a href="#">подробнее</a>
+                </div>
+                <div class="promo__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/promo/girl-mobile.webp 1x,
+                img/content/promo/girl-mobile@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 767px)" srcset="img/content/promo/girl-mobile.jpg 1x,
+                img/content/promo/girl-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/promo/girl-tablet.webp 1x,
+                img/content/promo/girl-tablet@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 1365px)"
+                      srcset="img/content/promo/girl-tablet.jpg 1x, img/content/promo/girl-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/content/promo/girl-desktop@1x.webp 1x,
+                img/content/promo/girl-desktop@2x.webp 2x">
+                    <img src="img/content/promo/girl-desktop@1x.jpg 1x" width="280" height="462"
+                      srcset="img/content/promo/girl-desktop@2x.jpg 2x"
+                      alt="Девушка блондинка в голубом спортивном костюме.">
+                  </picture>
+                </div>
+              </article>
+              <div class="offers__card">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
                 <a href="#">подробнее</a>
               </div>
-              <div class="promo__image">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/promo/girl-mobile.webp 1x,
-                img/content/promo/girl-mobile@2x.webp 2x">
-                  <source type="image/jpeg" media="(max-width: 767px)" srcset="img/content/promo/girl-mobile.jpg 1x,
-                img/content/promo/girl-mobile@2x.jpg 2x">
-                  <source type="image/webp" media="(max-width: 1365px)" srcset="img/content/promo/girl-tablet.webp 1x,
-                img/content/promo/girl-tablet@2x.webp 2x">
-                  <source type="image/jpeg" media="(max-width: 1365px)"
-                    srcset="img/content/promo/girl-tablet.jpg 1x, img/content/promo/girl-tablet@2x.jpg 2x">
-                  <source type="image/webp" srcset="img/content/promo/girl-desktop@1x.webp 1x,
-                img/content/offers/girl-desktop@2x.webp 2x">
-                  <img src="img/content/promo/girl-desktop@1x.jpg 1x" width="280" height="462"
-                    srcset="img/content/promo/girl-desktop@2x.jpg 2x"
-                    alt="Девушка блондинка в голубом спортивном костюме.">
-                </picture>
+              <div class="offers__card">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
+                <a href="#">подробнее</a>
               </div>
-            </article>
-            <div class="offers__card">
-              <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
-              <a href="#">подробнее</a>
             </div>
-            <div class="offers__card">
-              <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
-              <a href="#">подробнее</a>
-            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__lists">
+            <ul class="contacts__list contacts__list--left">
+              <li class="contacts__item">
+                <h3>Адрес:</h3>
+                <address>
+                  г. Омск, ул. 60 лет Октября, 7
+                </address>
+              </li>
+              <li class="contacts__item">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+            </ul>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3>Телефон:</h3>
+                <a href="tel:+78005555555">8-800-555-55-55</a>
+              </li>
+              <li class="contacts__item">
+                <h3>Email:</h3>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

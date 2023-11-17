@@ -1,7 +1,8 @@
 .jury-card {
   width: 100%;
   height: 100%;
-  padding: 46px 30px;
+  padding: 46px 30px 50px;
+  text-align: center;
   background-color: $color-sapphire-89;
   overflow-y: scroll;
   transform: scale(1.3);
@@ -11,47 +12,48 @@
   @include vp-767 {
     padding: 41px 15px;
   }
+}
 
-  .jury-card__name {
-    margin: 0 0 10px 0;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1;
-    text-align: center;
+.jury-card__name {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
 
-    @include vp-1365 {
-      margin-right: 10px;
-    }
-
-    @include vp-767 {
-      margin-right: 0;
-    }
+  @include vp-1365 {
+    margin-right: 10px;
   }
 
-  .jury-card__specialty {
-    margin: -3px 0 33px 0;
-    line-height: 1.5;
-    color: $color-default-white;
-    text-align: center;
-    font-weight: 300;
+  @include vp-767 {
+    margin-right: 0;
+  }
+}
 
-    @include vp-1365 {
-      margin-right: 12px;
-    }
+.jury-card__specialty {
+  margin: 0 auto;
+  margin-bottom: 33px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: $color-default-white;
+  text-align: center;
 
-    @include vp-767 {
-      margin-right: 0;
-    }
+  @include vp-1365 {
+    margin-right: 12px;
   }
 
-  .jury-card__list {
-    font-size: 14px;
-    line-height: 1.57;
-    list-style-type: disc;
-    padding-left: 35px;
+  @include vp-767 {
+    margin-right: 0;
   }
+}
 
-  .jury-card__item {
-    margin-bottom: 13px;
-  }
+.jury-card__list {
+  padding-left: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style-type: disc;
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: left;
 }

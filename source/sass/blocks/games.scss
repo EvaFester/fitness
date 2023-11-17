@@ -1,16 +1,16 @@
 .games {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 106px;
 
   @include vp-1365 {
     padding-top: 100px;
-    padding-bottom: 101px;
+    padding-bottom: 99px;
     width: 100%;
   }
 
   @include vp-767 {
     padding-top: 70px;
-    padding-bottom: 71px;
+    padding-bottom: 63px;
     width: 100%;
   }
 }
@@ -33,10 +33,14 @@
   width: 500px;
 
   @include vp-1365 {
-    padding: 40px 45px 45px 45px;
+    padding: 40px 45px 46px 45px;
     width: 43%;
     display: flex;
     flex-direction: column;
+  }
+
+  @include vp-1365 {
+    padding-top: 39px;
   }
 
   @include vp-767 {
@@ -49,8 +53,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 21px;
-  max-width: 343px;
+  margin-bottom: 9px;
+  max-width: 340px;
 
   @include vp-1365 {
     max-width: none;
@@ -89,7 +93,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
-  margin-right: 3px;
 
   @include vp-1365 {
     gap: 11px;
@@ -104,90 +107,42 @@
   }
 }
 
-.games__date-item {
+.games__list {
+  margin: 0;
+  margin-top: -2px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 9px;
-
-  @include vp-1365 {
-    gap: 4px;
-  }
-
-  @include vp-767 {
-    gap: 2px;
-  }
-}
-
-.games__date-name {
-  padding: 0;
-  margin: 0;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 19px;
-  padding-bottom: 7px;
-  word-break: break-all;
-
-  @include vp-1365 {
-    font-size: 18px;
-    line-height: 18px;
-    padding-bottom: 0;
-  }
-
-  @include vp-767 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
-.games__data-list {
-  margin: 0;
-  padding: 0;
-}
-
-.games__date-day {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 7px;
-  position: relative;
-  word-break: break-all;
-  padding-top: 1px;
-
-  @include vp-1365 {
-    gap: 3px;
-  }
-
-  @include vp-767 {
-    gap: 4px;
-  }
 }
 
 .games__date,
 .games__time {
-  margin: -2px 0 0 0;
-
   @include vp-1365 {
-    margin-top: -1px;
+    margin-left: -1px;
   }
 
   @include vp-767 {
     position: relative;
     justify-self: end;
     max-width: 56px;
-    margin-top: -1px;
   }
 }
 
 .games__date {
+  @include vp-1365 {
+    margin: 3px 0 -1px -1px;
+  }
+
   @include vp-767 {
-    left: -1px;
+    margin: 2px 0 0 -2px;
   }
 }
 
 .games__time {
   @include vp-767 {
-    left: -2px;
+    margin-top: -3px;
+    margin-left: -1px;
   }
 }
 
@@ -265,7 +220,7 @@
 }
 
 .games__time dd {
-  line-height: 1.7;
+  line-height: 1.65;
 
   @include vp-1365 {
     line-height: 1;

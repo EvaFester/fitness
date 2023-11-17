@@ -3,16 +3,19 @@
   align-content: center;
   justify-content: center;
   padding: 25px;
+  //padding-top: 28px;
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.6px;
+  text-transform: uppercase;
   cursor: pointer;
   background-color: $color-transparent;
 
 
   @include vp-1365 {
+    padding: 20px;
     font-weight: 400;
   }
 
