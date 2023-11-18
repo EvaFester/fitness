@@ -4,13 +4,16 @@
   display: flex;
   gap: 10px;
   max-width: 195px;
+  margin-left: 16px;
 
   @include vp-1365 {
     max-width: 130px;
+    margin-left: 9px;
   }
 
   @include vp-767 {
     margin: 0 auto;
+    padding-left: 1px;
   }
 }
 
@@ -69,5 +72,12 @@
 
   &:disabled {
     --color: #d8dadf;
+  }
+}
+
+.social__link--vk {
+  & svg {
+    width: 12.7px;
+    height: 13.8px;
   }
 }

@@ -190,13 +190,13 @@
   }
 
   &--next {
-    top: 43.5%;
+    top: 44.2%;
     right: -74px;
     transform: rotate(180deg);
 
     & svg {
       right: 12px;
-      top: 2px;
+      top: -7px;
     }
 
     @include vp-1365 {
