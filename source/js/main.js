@@ -4,6 +4,8 @@ import {initSliderJury} from './modules/jury-slider';
 import {getPrices} from './modules/price';
 import {initVideo} from './modules/video';
 import {initSliderReviews} from './modules/reviews-slider';
+import {initTabs} from './modules/tabs/init-tabs';
+import {initAccordions} from './modules/accordion/init-accordion';
 
 // ---------------------------------
 
@@ -20,13 +22,15 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    const form = new Form();
-    window.form = form;
-    form.init();
     initVideo();
     getPrices();
     initSliderJury();
     initSliderReviews();
+    initAccordions();
+    initTabs();
+    const form = new Form();
+    window.form = form;
+    form.init();
   });
 });
 

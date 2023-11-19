@@ -1,0 +1,237 @@
+.accordion {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__element {
+  border-top: 1px solid $color-resolution-blue-20;
+
+  &:first-child .accordion__wrapper {
+    padding-bottom: 22px;
+  }
+
+  @include vp-1365 {
+    &:first-child .accordion__wrapper {
+      padding-bottom: 24px;
+    }
+
+    &:last-child .accordion__container {
+      padding-top: 26px;
+      padding-bottom: 23px;
+    }
+
+    &:last-child .accordion__button {
+      top: 27px;
+    }
+  }
+
+  @include vp-767 {
+    &:first-child .accordion__container {
+      padding-bottom: 20px;
+    }
+
+    &:first-child .accordion__wrapper {
+      padding-bottom: 21px;
+    }
+
+    &:last-child .accordion__container {
+      padding-top: 22px;
+      padding-bottom: 21px;
+    }
+
+    &:nth-child(3) .accordion__button {
+      top: 36%;
+    }
+
+    &:last-child .accordion__button {
+      top: 36%;
+    }
+  }
+}
+
+.accordion__element.is-active {
+  margin-bottom: 2px;
+
+  @include vp-1365 {
+    margin-bottom: 0;
+
+    .accordion__container {
+      padding-bottom: 10px;
+    }
+  }
+
+  @include vp-767 {
+    .accordion__button {
+      top: 33%;
+    }
+  }
+}
+
+.accordion__element.is-active .accordion__container {
+  padding-bottom: 12px;
+}
+
+.accordion__element.is-active .accordion__button {
+  background-color: $color-resolution-blue;
+
+  &::before {
+    background-color: $color-default-white;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.accordion__elementv.is-disabled .accordion__button {
+  border: 1px solid $color-sapphire-30;
+  pointer-events: none;
+  cursor: default;
+
+  &::before,
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.accordion__container {
+  position: relative;
+  padding: 33px 50px 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-transparent;
+  max-width: 100%;
+
+  @include vp-1365 {
+    padding-top: 35px;
+  }
+
+  @include vp-767 {
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
+}
+
+.accordion__container p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: none;
+
+  @include vp-1365 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.accordion__br-tablet {
+  display: none;
+
+  @include vp-1365 {
+    display: block;
+  }
+}
+
+.accordion__br-mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.accordion__content {
+  max-width: 100%;
+}
+
+.accordion__wrapper {
+  padding: 0 0 25px;
+  max-width: 660px;
+
+  @include vp-1365 {
+    max-width: 550px;
+  }
+
+  @include vp-767 {
+    max-width: 275px;
+  }
+}
+
+.accordion__wrapper p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.accordion__button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $color-resolution-blue;
+  background: $color-transparent;
+  border-radius: 50%;
+  top: 25px;
+  right: 1px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    background-color: $color-resolution-blue;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    background-color: $color-resolution-blue;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-resolution-blue;
+
+    &::before,
+    &::after {
+      background-color: $color-default-white;
+    }
+  }
+
+  @include vp-1365 {
+    right: 0;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+    top: 32%;
+
+    &::before,
+    &::after {
+      width: 14px;
+      height: 1px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.tabs {
+  display: grid;
+  //grid-template-columns: repeat(12, 1fr);
+  //column-gap: 40px;
+  max-width: 100%;
+
+  @include vp-1365 {
+    // grid-template-columns: repeat(4, 1fr);
+    //gap: 10px;
+  }
+
+  @include vp-767 {
+    // grid-template-columns: 1fr;
+    //row-gap: 30px;
+  }
+}
+
+.tabs__wrapper {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  @include vp-1365 {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 29px;
+  }
+
+  @include vp-767 {
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 0;
+  }
+}
+
+.tabs__control {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px 10px;
+  min-height: 54px;
+  font-family: $ff-roboto-condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-sapphire;
+  background-color: $color-transparent;
+  ///border: none;
+  cursor: pointer;
+  border: solid 1px $color-sapphire-20;
+  transition: color $trans-default, border-color $trans-default, box-shadow $trans-default;
+
+  @include vp-767 {
+    min-height: 44px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @include hover-focus {
+    border-color: $color-sapphire;
+    outline: none;
+  }
+
+  &.is-active:not(:focus-visible) {
+    color: $color-default-white;
+    background: $gradient-button;
+    pointer-events: none;
+    box-shadow: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.tabs__content {
+  grid-column: span 9;
+
+  @include vp-1365 {
+    grid-column: span 4;
+  }
+
+  @include vp-767 {
+    grid-column: span 1;
+  }
+}
+
+.tabs__element {
+  width: 100%;
+}
