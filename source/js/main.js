@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {initSliderJury} from './modules/jury-slider';
 import {getPrices} from './modules/price';
 import {initVideo} from './modules/video';
+import {initSliderReviews} from './modules/reviews-slider';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initVideo();
     getPrices();
     initSliderJury();
+    initSliderReviews();
   });
 });
 
