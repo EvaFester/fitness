@@ -1,5 +1,4 @@
 .form {
-  // max-width: 410px;
   width: 100%;
 }
 
@@ -16,7 +15,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 23px;
   }
 }
 
@@ -81,12 +80,13 @@
   @include vp-1365 {
     margin-top: 29px;
     margin-left: -1px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 21px;
+    padding-bottom: 20px;
   }
 
   @include vp-767 {
     margin-top: 40px;
     margin-left: 0;
+    padding-bottom: 19px;
   }
 }

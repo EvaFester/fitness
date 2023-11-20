@@ -1,5 +1,5 @@
 .reviews {
-  padding-block: 119px;
+  padding: 121px 0 120px;
 
   @include vp-1365 {
     padding-top: 101px;
@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding-top: 70px;
+    padding-top: 72px;
     padding-bottom: 69px;
   }
 }
@@ -41,14 +41,21 @@
 .reviews__wrapper {
   display: flex;
   align-items: center;
-  gap: 40px;
+  width: min-content;
+  margin: 0 auto;
+  gap: 20px;
 
   @include vp-1365 {
-    gap: 10px;
+    gap: 13px;
+  }
+
+  @include vp-767 {
+    gap: 0;
   }
 }
 
 .reviews__button {
+  position: relative;
   width: 56px;
   height: 56px;
   background-color: $color-transparent;
@@ -61,7 +68,18 @@
     height: 42px;
   }
 
+  &--prev {
+    @include vp-1365 {
+      margin-left: -20px;
+    }
+
+    @include vp-767 {
+      margin-left: -10px;
+    }
+  }
+
   &--next {
+
     transform: rotate(180deg);
 
     @include vp-767 {
@@ -87,6 +105,19 @@
   }
 }
 
+.reviews__button svg {
+  color: $color-sapphire;
+  transition: color $trans-default;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate((-50%, -50%));
+
+  @include vp-767 {
+    width: 12px;
+    height: 21px;
+  }
+}
 
 .reviews__swiper {
   width: 560px;
@@ -106,13 +137,8 @@
   list-style: none;
 }
 
-
-.reviews__button svg {
-  color: $color-sapphire;
-  transition: color $trans-default;
-
-  @include vp-767 {
-    width: 12px;
-    height: 21px;
+.reviews__item {
+  &::marker {
+    color: transparent;
   }
 }

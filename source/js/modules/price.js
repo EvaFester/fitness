@@ -24,10 +24,10 @@ const changePrices = (index) => {
   });
 
   pricesDataControls.forEach((btn) => {
-    btn.classList.remove('is-active');
+    btn.classList.remove('active');
   });
 
-  pricesDataControls[index].classList.add('is-active');
+  pricesDataControls[index].classList.add('active');
 };
 
 const getPrices = () => {
