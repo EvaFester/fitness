@@ -27,6 +27,10 @@
   &::marker {
     color: transparent;
   }
+
+  @include vp-767 {
+    margin-top: -1px;
+  }
 }
 
 .social__link {

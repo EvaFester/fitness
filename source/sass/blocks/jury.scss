@@ -2,12 +2,11 @@
   position: relative;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 8px 0 120px;
+  padding: 14px 0 120px;
 
   @include vp-1365 {
-    padding-top: 0;
+    padding-top: 1px;
     padding-bottom: 100px;
-    margin-top: -3px;
   }
 
   @include vp-767 {
@@ -18,22 +17,16 @@
 
 .jury__title {
   margin: 0 auto;
-  margin-bottom: 40px;
-  font-family: $ff-alumni-sans;
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 1.62px;
+  margin-bottom: 45px;
 
   @include vp-1365 {
-    margin-bottom: 34px;
+    margin-bottom: 39px;
     text-align: center;
-    font-size: 42px;
     letter-spacing: 1.26px;
   }
 
   @include vp-767 {
-    margin-bottom: 38px;
+    margin-bottom: 42px;
     font-size: 32px;
     letter-spacing: 0.96px;
   }

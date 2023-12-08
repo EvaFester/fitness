@@ -1,18 +1,6 @@
 .tabs {
   display: grid;
-  //grid-template-columns: repeat(12, 1fr);
-  //column-gap: 40px;
   max-width: 100%;
-
-  @include vp-1365 {
-    // grid-template-columns: repeat(4, 1fr);
-    //gap: 10px;
-  }
-
-  @include vp-767 {
-    // grid-template-columns: 1fr;
-    //row-gap: 30px;
-  }
 }
 
 .tabs__wrapper {
@@ -26,7 +14,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
 
   @include vp-767 {
@@ -50,7 +38,6 @@
   line-height: 18px;
   color: $color-sapphire;
   background-color: $color-transparent;
-  ///border: none;
   cursor: pointer;
   border: solid 1px $color-sapphire-20;
   transition: color $trans-default, border-color $trans-default, box-shadow $trans-default;

@@ -7,7 +7,7 @@
   }
 }
 
-.footer {
+.footer__background {
   background-color: $color-black-russian;
 }
 
@@ -47,7 +47,6 @@
 
 .footer__navigation-list {
   margin: 0 auto;
-  margin-top: 1px;
   align-self: center;
   padding: 0;
   display: flex;
@@ -57,7 +56,6 @@
   @include vp-1365 {
     max-width: 420px;
     gap: 9px;
-    margin-top: -1px;
   }
 
   @include vp-767 {

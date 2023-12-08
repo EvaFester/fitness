@@ -37,10 +37,9 @@
   @include vp-767 {
     max-width: 738px;
     margin: 0 auto;
-    //width: calc(100% - 20px);
-    //justify-items: end;
     grid-template-columns: 39% 61%;
     padding-top: 39px;
+    padding-bottom: 30px;
   }
 }
 
@@ -71,18 +70,20 @@
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 54px;
   letter-spacing: 1.62px;
   text-transform: uppercase;
 
   @include vp-1365 {
     font-size: 42px;
+    line-height: 41px;
     letter-spacing: 1.26px;
   }
 
   @include vp-767 {
     max-width: 290px;
     font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0.96px;
   }
 }
@@ -95,13 +96,14 @@
   font-family: $ff-alumni-sans;
   font-size: 92px;
   font-weight: 800;
-  line-height: 1.19;
+  line-height: 110px;
   text-transform: uppercase;
   letter-spacing: 4.6px;
   word-wrap: break-word;
 
   @include vp-1365 {
-    margin-top: 9px;
+    margin-top: 7px;
+    line-height: 86px;
     font-size: 72px;
     padding-bottom: 49px;
     letter-spacing: 0;
@@ -114,7 +116,7 @@
     max-width: 310px;
     font-size: 62px;
     letter-spacing: 1.86px;
-    line-height: 1.13;
+    line-height: 70px;
   }
 }
 
@@ -125,7 +127,7 @@
   margin: 65px 0 0 0;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 22px;
   align-self: center;
 
   @include vp-1365 {
@@ -134,7 +136,7 @@
 
   @include vp-767 {
     margin: 63px 0 0;
-    line-height: 1.4;
+    line-height: 20px;
   }
 }
 
@@ -160,5 +162,6 @@
     width: 100%;
     grid-column: 1/-1;
     margin: 0;
+    margin-top: 1px;
   }
 }

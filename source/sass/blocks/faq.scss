@@ -3,7 +3,7 @@
   background-color: $color-ghost-white;
 
   @include vp-1365 {
-    padding-top: 100px;
+    padding-top: 101px;
     padding-bottom: 102px;
   }
 
@@ -56,6 +56,10 @@
 .faq__lists {
   margin: 0;
   padding: 0;
+}
+
+.faq__accordion {
+  margin-top: -1px;
 }
 
 .faq__list {
